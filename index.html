@@ -6,6 +6,7 @@
 </head>
 
 <body class="page" style="text-align: center;">
+
     <div style="width:650px; margin: 0 auto;" class="section">
         <section>
             <p style="font-size:14px; text-align: left;">Vest Labs is a crypto research firm based in New York. <br>
@@ -18,10 +19,30 @@
             </p>
         </section>
     </div>
+
     <table class="section" style="margin: 0 auto; text-align: center;">
+        <tr class="research-heading">
+            <th>Research</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>
+                zkRisk
+                <a href="https://research.vest.xyz/t/zkrisk/205" target="_blank" class="research-link">
+                    [discourse]
+                </a>
+                <a href="https://github.com/VestLabs/papers/blob/main/zkRisk/zkRisk.pdf" target="_blank"
+                    class="research-link">
+                    [full paper]
+                </a>
+            </td>
+            <td>20 Nov. 2023</td>
+        </tr>
         <!-- ... (rest of the table content) ... -->
     </table>
+
     <!-- ... (rest of the HTML) ... -->
+
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script type="text/javascript">
         DiscourseEmbed = {
@@ -38,7 +59,6 @@
 </body>
 
 <style>
-    /* ... (rest of the styles) ... */
     body {
         text-align: center;
     }
@@ -48,6 +68,59 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    div {
+        font-family: lora;
+        font-weight: 300;
+    }
+
+    @font-face {
+        font-family: lora;
+        src: url("lora.ttf");
+    }
+
+    .discourse {
+        height: 500px;
+    }
+
+    .research-heading {
+        font-size: 15px;
+    }
+
+    table {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    td {
+        vertical-align: top;
+        padding-right: 3em;
+        table-layout: auto;
+        font-size: 15px;
+    }
+
+    th {
+        vertical-align: bottom;
+    }
+
+    .section {
+        padding: 2ex;
+    }
+
+    .footer {
+        position: fixed;
+        left: 25px;
+        bottom: 25px;
+        width: 100%;
+        text-align: left;
+        padding: 2ex
+    }
+
+    .extra-link {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px
     }
 </style>
 
